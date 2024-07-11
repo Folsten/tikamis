@@ -1,0 +1,18 @@
+﻿name: Deploy
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  run:
+    runs-on: [self-hosted]
+    steps:
+      - name: Checkout This Repository
+        uses: actions/checkout@v3
+      - name: install dependencies
+        run: npm install
+      - name: build
+        run: npm run build
+      - name: move dist
+        run: cp -r dist/* /opt/mechanichttp/

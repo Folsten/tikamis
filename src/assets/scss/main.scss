@@ -1,0 +1,18 @@
+// >>> Порядок подключения файлов и тайлвинд слоёв имеет значение, поскольку это напрямую влияет
+// на приоритетность указания стилей.
+
+// отключение базовых стилей браузера и подключение шрифтов
+@import 'reset';
+@import 'fonts';
+
+// tailwind базовый слой
+@tailwind base;
+@import 'base';
+
+// tailwind слой компонентов
+@tailwind components;
+@import 'components';
+
+// tailwind утилити слой
+@tailwind utilities;
+@import 'utilities';

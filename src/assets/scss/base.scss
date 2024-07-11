@@ -1,0 +1,11 @@
+// Здесь прописывать только стили для базового слоя Tailwind
+
+@layer base {
+  * {
+    @apply text-black;
+    font-family: 'Inter', sans-serif;
+  }
+  .base-input {
+    @apply h-[60px] flex border border-gray-a1a4ad pl-5 pr-5;
+  }
+}

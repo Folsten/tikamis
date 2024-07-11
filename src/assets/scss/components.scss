@@ -1,0 +1,22 @@
+// Здесь прописывать только стили для компонентного слоя Tailwind
+
+@layer components {
+  .report-section {
+    @apply pt-[40px] px-[30px];
+  }
+  .report-filter {
+    @apply flex items-center border border-gray-a1a4ad pl-[20px] pr-[14px] py-1.5 cursor-pointer;
+  }
+  .report-input-header-text-gray {
+    @apply text-gray-a1a4ad font-semibold text-sm;
+  }
+  .report-input-body-text {
+    @apply text-2xl;
+  }
+  .report-input-body-text-bold {
+    @apply text-2xl font-semibold;
+  }
+  .report-input-arrow-down-gray {
+    @apply max-w-[14px] max-h-[8px];
+  }
+}
